@@ -1,0 +1,8 @@
+src/caffe/layers/channel_norm_layer.cpp: In instantiation of ‘void caffe::ChannelNormLayer<Dtype>::Reshape(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = float]’:
+src/caffe/layers/channel_norm_layer.cpp:193:1:   required from here
+src/caffe/layers/channel_norm_layer.cpp:34:13: warning: unused variable ‘channels’ [-Wunused-variable]
+   const int channels = bottom[0]->channels();
+             ^
+src/caffe/layers/channel_norm_layer.cpp: In instantiation of ‘void caffe::ChannelNormLayer<Dtype>::Reshape(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = double]’:
+src/caffe/layers/channel_norm_layer.cpp:193:1:   required from here
+src/caffe/layers/channel_norm_layer.cpp:34:13: warning: unused variable ‘channels’ [-Wunused-variable]
