@@ -56,7 +56,7 @@ Training
 
 First you need to prepare the training data using Features_Extraction.py
 
-    $ python scripts/LSTM.py 
+    $ python scripts/Training_ML_LSTM.py 
     Change path in code: Line No. 147
 
 Testing
@@ -64,7 +64,7 @@ Testing
 
 Testing video using trained multi-layer LSTM 
 
-    $ scripts/OneFileOnlineTest.py 
+    $ scripts/Video_Testing.py 
     Change paths: Line 40, 62, 63, 175
 
 
