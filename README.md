@@ -1,12 +1,10 @@
-Activity Recognition using Temporal Optical Flow Convolutional Features and Multi-Layer LSTM (Caffe for FlowNet2 )
+Activity Recognition using Temporal Optical Flow Convolutional Features and Multi-Layer LSTM 
 ==================
 
-This code is used for just research work:
- - If you want to use this code for commecial purpose please see the license information of Flownet2 in the following link
+This code can only be used for research purposes:
+ - If you want to use this code for commercial purpose, please see the license information of Flownet2 in the following link
  - https://github.com/lmb-freiburg/flownet2 
 
-It comes as a fork of the caffe master branch and with trained networks,
-as well as examples to use and train them.
 
 Citation
 ====================
@@ -42,24 +40,29 @@ and download models:
     $ cd models 
     $ ./download-models.sh 
  
-Extract sequancel temporal optical flow features for activity recogntion dataset: 
+Features Extraction 
+========
 
-    $ scripts/FullDatasetFeatures.py
-    change paths: line 16,18,19
+Extract temporal optical flow features from activity recogntion datasets: 
+*Activity recogntion datasets can be downloaded from the following Links
+- http://crcv.ucf.edu/data/UCF101.php (UCF101)
+- http://crcv.ucf.edu/data/UCF50.php  (UCF50)
+
+    $ python scripts/FullDatasetFeatures.py
+    Change paths in code: Line No 16,18,19
 
 Training
 ========
 
-(this assumes you compiled the code sucessfully) 
+First you need to prepare the training data using FullDatasetFeatures.py
 
-First you need to download and prepare the training data using FullDatasetFeatures.py
+    $ python scripts/LSTM.py 
+    Change path in code: Line No. 147
 
-Learning from sequanctal temporal optical flow features using multi-layer LSTM: 
+Testing
+========
 
-    $ scripts/LSTM.py 
-    Change path to save the trained model line 147
-
-Testing video using trained multi-layer LSM: 
+Testing video using trained multi-layer LSTM 
 
     $ scripts/OneFileOnlineTest.py 
     Change paths: Line 40, 62, 63, 175
