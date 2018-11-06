@@ -48,13 +48,13 @@ Extract temporal optical flow features from activity recogntion datasets:
 - http://crcv.ucf.edu/data/UCF101.php (UCF101)
 - http://crcv.ucf.edu/data/UCF50.php  (UCF50)
 
-    $ python scripts/FullDatasetFeatures.py
+    $ python scripts/Features_Extraction.py
     Change paths in code: Line No 16,18,19
 
 Training
 ========
 
-First you need to prepare the training data using FullDatasetFeatures.py
+First you need to prepare the training data using Features_Extraction.py
 
     $ python scripts/LSTM.py 
     Change path in code: Line No. 147
