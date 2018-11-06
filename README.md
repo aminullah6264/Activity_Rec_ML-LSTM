@@ -15,7 +15,7 @@ Citation
 Compiling
 =========
 
-First compile caffe, by configuring a
+First compile caffe, by configuring 
 
     "Makefile.config" (example given in Makefile.config.example)
 
