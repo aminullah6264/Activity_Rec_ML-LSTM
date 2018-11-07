@@ -1,16 +1,6 @@
 Activity Recognition using Temporal Optical Flow Convolutional Features and Multi-Layer LSTM 
 ==================
 
-This code can only be used for research purposes:
- - If you want to use this code for commercial purpose, please see the license information of Flownet2 in the following link
- - https://github.com/lmb-freiburg/flownet2 
-
-
-Citation
-====================
-1. Our accepted work will be online soon
-2. https://github.com/lmb-freiburg/flownet2
-
 
 Compiling
 =========
@@ -68,6 +58,16 @@ Testing video using trained multi-layer LSTM
     Change paths: Line 40, 62, 63, 175
 
 
+
+This code can only be used for research purposes:
+ - If you want to use this code for commercial purpose, please see the license information of Flownet2 in the following link
+ - https://github.com/lmb-freiburg/flownet2 
+
+
+Citation
+====================
+1. Our accepted work will be online soon
+2. https://github.com/lmb-freiburg/flownet2
 
 
 
