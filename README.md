@@ -66,8 +66,15 @@ This code can only be used for research purposes:
 
 Citation
 ====================
-1. Our accepted work will be online soon
-2. https://github.com/lmb-freiburg/flownet2
+<pre>
+<code>
+Ullah, A., Muhammad, K., Baik, S. W. (2018). Activity Recognition using Temporal Optical Flow Convolutional Features and Multi-Layer LSTM. IEEE Transactions on Industrial Electronics.
+
+Ullah, A., Ahmad, J., Muhammad, K., Sajjad, M., & Baik, S. W. (2018). Action Recognition in Video Sequences using Deep Bi-  Directional LSTM With CNN Features. IEEE Access, 6, 1155-1166.
+
+Ilg E, Mayer N, Saikia T, Keuper M, Dosovitskiy A, Brox T. Flownet 2.0: Evolution of optical flow estimation with deep networks. InIEEE conference on computer vision and pattern recognition (CVPR) 2017 Jul 1 (Vol. 2, p. 6).
+</code>
+</pre>
 
 
 
