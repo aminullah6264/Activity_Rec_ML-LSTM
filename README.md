@@ -5,6 +5,10 @@ Paper
 =========
 https://ieeexplore.ieee.org/document/8543495 
 
+Demo Results 
+=========
+[![Demo Doccou alpha](http://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=x58jSG8IvXQ)
+
 Compiling
 =========
 
