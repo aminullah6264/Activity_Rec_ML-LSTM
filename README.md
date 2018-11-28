@@ -1,10 +1,6 @@
 Activity Recognition using Temporal Optical Flow Convolutional Features and Multi-Layer LSTM 
 ==================
 
-<video width="400" controls>
-  <source src="https://www.youtube.com/watch?v=x58jSG8IvXQ">
-</video>
-
 Paper
 =========
 https://ieeexplore.ieee.org/document/8543495 
