@@ -47,6 +47,7 @@ Extract temporal optical flow features from activity recogntion datasets:
 - http://crcv.ucf.edu/data/UCF50.php  (UCF50)
 
     $ python scripts/Features_Extraction.py
+    
     Change paths in code: Line No 16,18,19
 
 Training
