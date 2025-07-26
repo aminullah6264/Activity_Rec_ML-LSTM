@@ -1,0 +1,48 @@
+# Default configuration for Activity Recognition System
+# This file contains all configurable parameters for the system
+
+# Data configuration
+data:
+  dataset_folder: "data/raw"
+  output_folder: "data/processed"
+  class_names_file: "config/class_names.txt"
+
+# Model configuration
+model:
+  # FlowNet2 configuration for feature extraction
+  flownet:
+    caffemodel: "models/pretrained/FlowNet2_weights.caffemodel.h5"
+    deploy_proto: "models/pretrained/FlowNet2_deploy.prototxt.template"
+    width: 512
+    height: 386
+    gpu_id: 0
+
+  # LSTM model configuration
+  lstm:
+    n_classes: 101              # Number of activity classes
+    chunk_size: 1024            # Feature dimension per time step
+    n_chunks: 15                # Number of time steps (temporal window)
+    rnn_size: 256               # LSTM hidden state size
+    n_layers: 2                 # Number of LSTM layers
+    epochs: 500                 # Training epochs
+    batch_size: 128             # Training batch size
+    validation_batch_size: 64   # Validation batch size
+    learning_rate: 0.001        # Initial learning rate
+    model_save_path: "models/trained"
+
+# Processing configuration
+processing:
+  frames_per_segment: 30        # Number of frames per video segment
+  feature_dim: 15360            # Total feature dimension (n_chunks * chunk_size)
+  max_pool_features: true       # Whether to apply max pooling to features
+
+# Training configuration
+training:
+  test_size: 0.2               # Fraction of data for testing
+  validation_size: 0.2         # Fraction of training data for validation
+  random_state: 42             # Random seed for reproducibility
+
+# Logging configuration
+logging:
+  level: "INFO"                # Logging level (DEBUG, INFO, WARNING, ERROR)
+  log_file: null               # Optional log file path
